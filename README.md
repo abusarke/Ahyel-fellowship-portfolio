@@ -30,8 +30,10 @@ The architecture focuses strictly on optimal performance, semantic structure, an
 ## 📂 Local Setup & Installation Instructions
 
 Follow these steps to deploy and run the localized portfolio workspace environment natively on your machine:
- 1. *Clone the Repository:*
+1. *Clone the Repository:*
    ```bash
-   git clone [https://github.com/abusarke/Ahyel-fellowship-portfolio/.git](https://github.com/abusarke/Ahyel-fellowship-portfolio/.git)
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+   git clone [https://github.com/abusarke/Ahyel-fellowship-portfolio/.git]
+
+
+
+
