@@ -43,7 +43,7 @@ Follow these steps to deploy and run the localized portfolio workspace environme
 This repository holds structural client-side configurations built to manifest my current technical bounds as a self-directed explorer. Through the AHYEL Tech Fellowship 2026, I intend to advance my knowledge into full-stack backend development, cloud data integration pipelines, and practical machine learning engineering to safely build tools serving target grassroots communities.
 
 
-
+Developed by Abubakar Ibrahim — Committed to engineered social impact through code.
 
 
 
