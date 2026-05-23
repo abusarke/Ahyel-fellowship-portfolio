@@ -1,7 +1,6 @@
 **Title: Bridging the Digital and Linguistic Divide in Northern Nigeria Through AI and Localized Media**
 
-**The Problem
-**
+**The Problem**
 
 Underserved communities in Northern Nigeria face a critical dual challenge: a massive digital literacy gap and a severe lack of accessible, high-quality educational and technical resources available in their native language (Hausa). While modern tools like Generative AI are transforming global industries, they remain locked behind English-language barriers and steep technical learning curves for grassroots communities.
 
