@@ -19,9 +19,13 @@ Leaving these communities behind deepens the digital divide, limiting economic m
 **Proposed Solution**
 
 **A two-pronged digital ecosystem tailored for localized impact:**
+
 **Hausa Radio Pro:**
+
 A unified web platform designed to preserve culture and broadcast accessible audio media, educational content, and news natively in Hausa.
+
 **AI Community Assistant:**
+
 An intelligent, multilingual web application that breaks down complex tech concepts, provides direct support, and answers localized community questions using simple interfaces.
 
 
