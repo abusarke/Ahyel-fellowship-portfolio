@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abubakar Ibrahim | Aspiring Software Developer & AI Enthusiast</title>
+    <title>Abubakar Ibrahim | Software Developer & AI Enthusiast</title>
     
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
-    <!-- Your Custom CSS (Fixed the missing > here) -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Your JavaScript (Cleaned up) -->
     <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- NAV -->
     <nav>
         <div class="nav-container">
             <div class="logo">Abubakar.</div>
@@ -35,44 +31,41 @@
         </div>
     </nav>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>ABUBAKAR IBRAHIM</h1>
-                <p class="subtitle">Aspiring Software Developer & AI Enthusiast</p>
+                <p class="subtitle">I am a <span id="typing" class="typing"></span></p>
                 <p>Passionate about using technology to solve problems in underserved communities. Seeking the <strong>AHYEL Tech Fellowship 2026</strong>.</p>
                 
-                <div style="margin-top: 2.5rem;">
+                <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#" onclick="openAIChat()" class="btn btn-primary" style="background:#22d3ee; margin-left:15px;">Talk to AI Assistant</a>
+                    <a href="#" onclick="openAIChat(event)" class="btn btn-ai"><i class="fas fa-comments"></i> Talk to AI Assistant</a>
                 </div>
             </div>
-            <div>
+            <div class="hero-img-wrapper">
                 <img src="abubakar.jpg" alt="Abubakar Ibrahim" class="profile-pic">
             </div>
         </div>
     </section>
 
-    <!-- OBJECTIVE -->
-    <section id="objective">
+    <section id="objective" class="section-padding">
         <div class="container">
             <h2 class="section-title">Professional Objective</h2>
-            <div class="card" style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.25rem;">
+            <div class="card objective-box">
                 <p>I am an aspiring tech professional eager to join the <strong>AHYEL Tech Fellowship 2026</strong> to enhance my digital skills, gain world-class mentorship, and develop innovative solutions that empower underserved communities in Nigeria and beyond.</p>
             </div>
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" style="background: #0f0f1a;">
+    <section id="experience" class="section-padding bg-alt">
         <div class="container">
             <h2 class="section-title">Experience & Initiatives</h2>
             <div class="grid">
                 <div class="card">
-                    <h3><i class="fas fa-chalkboard-teacher"></i> Community Tech Mentor</h3>
-                    <p><strong>Solo Learn Community</strong></p>
-                    <p>Taught basic computer literacy and guided peers to online learning resources.</p>
+                    <h3><i class="fas fa-code-branch"></i> Version Control Specialist</h3>
+                    <p><strong>Independent Developer</strong></p>
+                    <p>Managing codebase integrity, branching workflows, and open-source project documentation utilizing Git and GitHub environments.</p>
                 </div>
                 <div class="card">
                     <h3><i class="fas fa-brain"></i> AI Explorer</h3>
@@ -80,152 +73,226 @@
                     <p>Actively exploring Generative AI tools to solve real-world community problems.</p>
                 </div>
                 <div class="card">
-                    <h3><i class="fab fa-wordpress"></i> Web Developer (Self-taught)</h3>
-                    <p>Built and maintained simple websites using WordPress and Blogspot.</p>
+                    <h3><i class="fas fa-layer-group"></i> Full-Stack Application Architect</h3>
+                    <p><strong>Technical Foundations</strong></p>
+                    <p>Designing and constructing modular web solutions using HTML5, CSS3, interactive JavaScript logic, React components, and Node.js backend infrastructure.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education">
+    <section id="education" class="section-padding">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <div class="card" style="max-width: 700px; margin: 0 auto;">
-                <h3>JIBWIS College of Education, Jama'are</h3>
-                <p><strong>NCE English / Social Studies (2021)</strong> • Grade: 4.5/5.0 (Distinction)</p>
-                <p>• Specialized in dual-subject instruction and modern pedagogical techniques.</p>
-                <p>• Focused on enhancing student literacy and critical thinking through integrated social science and language programs.</p>
+            <div class="card" style="max-width: 750px; margin: 0 auto; text-align: center;">
+                <h3><i class="fas fa-university"></i> JIBWIS College of Education, Jama'are</h3>
+                <p style="margin: 0.5rem 0; font-size: 1.1rem; color: var(--accent);"><strong>English / Social Studies</strong></p>
+                <p>Graduated with Distinction • CGPA Grade: <strong>4.5 / 5.0</strong> • Class of 2021</p>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" style="background: #0f0f1a;">
+    <section id="projects" class="section-padding bg-alt">
         <div class="container">
-            <h2 class="section-title">Interactive Projects & Demos</h2>
+            <h2 class="section-title">Interactive Projects</h2>
             <div class="grid">
                 <div class="card">
                     <h3>Hausa Radio Pro</h3>
-                    <p>Modern web radio platform for Hausa language content.</p>
-                    <button class="btn btn-primary" style="margin-top:15px;" onclick="window.open('https://hausaradiopro.netlify.app', '_blank')">Launch Demo</button>
+                    <p>Modern web radio platform designed for streaming localized Hausa language broadcasting content efficiently.</p>
+                    <button class="btn btn-primary btn-small" onclick="window.open('https://hausaradiopro.netlify.app', '_blank')">Launch Demo</button>
                 </div>
                 <div class="card">
                     <h3>AI Community Assistant</h3>
-                    <p>Intelligent chatbot designed to assist local communities.</p>
-                    <button class="btn btn-primary" style="margin-top:15px;" onclick="openAIChat()">Try AI Chat</button>
+                    <p>Intelligent digital chatbot portal structured to guide visitors and assist with automated answers.</p>
+                    <button class="btn btn-primary btn-small" onclick="openAIChat(event)">Try AI Chat</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CERTIFICATES -->
-    <section id="certificates">
+    <section id="certificates" class="section-padding">
         <div class="container">
             <h2 class="section-title">Certificates & Achievements</h2>
             <div class="grid">
                 <div class="card">
-                    <h4>Programming Foundations with JavaScript, HTML and CSS</h4>
-                    <p><strong>Duke University • Coursera</strong></p>
-                    <a href="https://coursera.org/share/e2c4a1e6148552113c0e29c46dfe69b2" target="_blank" style="color:var(--accent)">View Certificate →</a>
+                    <h4>Developing Front-End Apps with React</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>IBM • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/XXHUYFUSNT98" target="_blank">View Certificate →</a>
                 </div>
-                <!-- You can add more certificate cards here -->
+                <div class="card">
+                    <h4>React Basics</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Meta • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/ICZ0FINISO4D" target="_blank">View Certificate →</a>
+                </div>
+                <div class="card">
+                    <h4>HTML and CSS in depth</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Meta • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/ZHAEJAOAGMS5" target="_blank">View Certificate →</a>
+                </div>
+                <div class="card">
+                    <h4>Introduction to Front-End Development</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Meta • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/DZ8LV3HXXMWY" target="_blank">View Certificate →</a>
+                </div>
+
+                <div class="card">
+                    <h4>Programming Foundations with JavaScript, HTML and CSS</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Duke University • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/291HFUMIHXPS" target="_blank">View Certificate →</a>
+                </div>
+                <div class="card">
+                    <h4>Interactivity with JavaScript</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>University of Michigan • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/O8J9NPFPGQIE" target="_blank">View Certificate →</a>
+                </div>
+
+                <div class="card">
+                    <h4>Developing Back-End Apps with Node.js and Express</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>IBM • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/Z4ORTPITXYPD" target="_blank">View Certificate →</a>
+                </div>
+                <div class="card">
+                    <h4>Getting Started with Git and GitHub</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>IBM • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/E2IE3E4IHBRC" target="_blank">View Certificate →</a>
+                </div>
+
+                <div class="card">
+                    <h4>User Experience: Research & Prototyping</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Accenture • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/F7VSLVSSW6AM" target="_blank">View Certificate →</a>
+                </div>
+                <div class="card">
+                    <h4>Operating Systems and You: Becoming a Power User</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Google • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/8U54BF8L55Y0" target="_blank">View Certificate →</a>
+                </div>
+                <div class="card">
+                    <h4>Technical Support Fundamentals</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Google • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/WT5X868YSOHK" target="_blank">View Certificate →</a>
+                </div>
+
+                <div class="card">
+                    <h4>Introduction to Google Workspace with Gemini</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Google Cloud • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/VNFU82X0SYAM" target="_blank">View Certificate →</a>
+                </div>
+                <div class="card">
+                    <h4>Work Smarter with Microsoft Excel</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Microsoft • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/4IYHE4OU1ADK" target="_blank">View Certificate →</a>
+                </div>
+                <div class="card">
+                    <h4>Work Smarter with Microsoft Word</h4>
+                    <p style="margin: 4px 0 15px 0;"><strong>Microsoft • Coursera</strong></p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/M7TR5NUWZIXT" target="_blank">View Certificate →</a>
+                </div>
                 <div class="card">
                     <h4>Introduction to Artificial Intelligence</h4>
-                    <p><strong>IBM • Coursera</strong></p>
-                    <a href="#" target="_blank" style="color:var(--accent)">View Certificate →</a>
+                    <p style="margin: 4px 0 15px 0;"><strong>IBM • Coursera</strong></p>
+                    <a href="#" onclick="event.preventDefault(); alert('Verification asset is processing.');">View Certificate →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
+    <section id="skills" class="section-padding bg-alt">
         <div class="container">
             <h2 class="section-title">Technical & Soft Skills</h2>
-            <div class="grid">
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
                 <div class="card">
-                    <div class="skill"><div class="skill-name"><span>HTML / CSS Basics</span><span>75%</span></div><div class="progress-bar"><div class="progress" style="width:75%"></div></div></div>
-                    <div class="skill"><div class="skill-name"><span>Generative AI Tools</span><span>70%</span></div><div class="progress-bar"><div class="progress" style="width:70%"></div></div></div>
-                    <div class="skill"><div class="skill-name"><span>Web Development</span><span>65%</span></div><div class="progress-bar"><div class="progress" style="width:65%"></div></div></div>
-                    <div class="skill"><div class="skill-name"><span>Graphic Design</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+                    <h3 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 1.2rem;"><i class="fas fa-laptop-code"></i> Frontend Stack</h3>
+                    <div class="skill"><div class="skill-name"><span>HTML5 & CSS3 Architecture</span><span>75%</span></div><div class="progress-bar"><div class="progress" style="width:75%"></div></div></div>
+                    <div class="skill"><div class="skill-name"><span>JavaScript Basics & Logic</span><span>60%</span></div><div class="progress-bar"><div class="progress" style="width:60%"></div></div></div>
+                    <div class="skill"><div class="skill-name"><span>Responsive Layout Design</span><span>70%</span></div><div class="progress-bar"><div class="progress" style="width:70%"></div></div></div>
                 </div>
                 <div class="card">
-                    <div class="skill"><div class="skill-name"><span>Problem Solving</span><span>85%</span></div><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
-                    <div class="skill"><div class="skill-name"><span>Community Leadership</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
-                    <div class="skill"><div class="skill-name"><span>Content Creation</span><span>80%</span></div><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
-                    <div class="skill"><div class="skill-name"><span>Video Editing</span><span>80%</span></div><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+                    <h3 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 1.2rem;"><i class="fas fa-photo-film"></i> Creative Design Suite</h3>
+                    <div class="skill"><div class="skill-name"><span>Graphic Design & Assets</span><span>80%</span></div><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+                    <div class="skill"><div class="skill-name"><span>Video Editing & Post-Production</span><span>75%</span></div><div class="progress-bar"><div class="progress" style="width:75%"></div></div></div>
+                    <div class="skill"><div class="skill-name"><span>UI/UX Interface Prototyping</span><span>65%</span></div><div class="progress-bar"><div class="progress" style="width:65%"></div></div></div>
+                </div>
+                <div class="card">
+                    <h3 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 1.2rem;"><i class="fas fa-server"></i> Systems & Intelligence</h3>
+                    <div class="skill"><div class="skill-name"><span>Generative AI Tools & Prompting</span><span>70%</span></div><div class="progress-bar"><div class="progress" style="width:70%"></div></div></div>
+                    <div class="skill"><div class="skill-name"><span>Git & GitHub Version Control</span><span>65%</span></div><div class="progress-bar"><div class="progress" style="width:65%"></div></div></div>
+                    <div class="skill"><div class="skill-name"><span>WordPress & CMS Architecture</span><span>80%</span></div><div class="progress-bar"><div class="progress" style="width:80%"></div></div></div>
+                </div>
+                <div class="card">
+                    <h3 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 1.2rem;"><i class="fas fa-user-check"></i> Professional Capacities</h3>
+                    <div class="skill"><div class="skill-name"><span>Analytical Problem Solving</span><span>85%</span></div><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
+                    <div class="skill"><div class="skill-name"><span>Community Team Leadership</span><span>90%</span></div><div class="progress-bar"><div class="progress" style="width:90%"></div></div></div>
+                    <div class="skill"><div class="skill-name"><span>Educational Communication</span><span>85%</span></div><div class="progress-bar"><div class="progress" style="width:85%"></div></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- STRENGTHS -->
-    <section id="strengths" style="background: #0f0f1a;">
+    <section id="strengths" class="section-padding">
         <div class="container">
             <h2 class="section-title">My Strengths</h2>
             <div class="grid">
                 <div class="card">
                     <h3>Mentorship & Knowledge Sharing</h3>
-                    <p>Passionate about empowering others through teaching and guidance.</p>
+                    <p>Deeply passionate about empowering nearby student groups through teaching, technical tutorials, and open guidance paths.</p>
                 </div>
                 <div class="card">
                     <h3>Community Impact</h3>
-                    <p>Committed to using technology for social good in underserved areas.</p>
+                    <p>Committed to deploying responsive technical solutions aimed closely at addressing local infrastructure hurdles in underserved areas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- INTERESTS -->
-    <section id="interests">
+    <section id="interests" class="section-padding bg-alt">
         <div class="container">
             <h2 class="section-title">Fields of Interest</h2>
             <div class="grid">
-                <div class="card"><i class="fas fa-code"></i> Software Development</div>
-                <div class="card"><i class="fas fa-robot"></i> Artificial Intelligence</div>
-                <div class="card"><i class="fas fa-globe"></i> Web Development</div>
-                <div class="card"><i class="fas fa-paint-brush"></i> Web Design</div>
-                <div class="card"><i class="fas fa-paint-brush"></i> Graphic Design</div>
-                <div class="card"><i class="fas fa-paint-brush"></i> Video Editing</div>
+                <div class="card" style="align-items: center; text-align: center; padding: 1.5rem;"><h3 style="font-size: 1.2rem; margin:0;"><i class="fas fa-code"></i> Software Development</h3></div>
+                <div class="card" style="align-items: center; text-align: center; padding: 1.5rem;"><h3 style="font-size: 1.2rem; margin:0;"><i class="fas fa-cubes"></i> Web Application</h3></div>
+                <div class="card" style="align-items: center; text-align: center; padding: 1.5rem;"><h3 style="font-size: 1.2rem; margin:0;"><i class="fas fa-robot"></i> Artificial Intelligence</h3></div>
+                <div class="card" style="align-items: center; text-align: center; padding: 1.5rem;"><h3 style="font-size: 1.2rem; margin:0;"><i class="fas fa-globe"></i> Web Development</h3></div>
+                <div class="card" style="align-items: center; text-align: center; padding: 1.5rem;"><h3 style="font-size: 1.2rem; margin:0;"><i class="fas fa-paint-brush"></i> Web Design</h3></div>
+                <div class="card" style="align-items: center; text-align: center; padding: 1.5rem;"><h3 style="font-size: 1.2rem; margin:0;"><i class="fas fa-palette"></i> Graphic Design</h3></div>
+                <div class="card" style="align-items: center; text-align: center; padding: 1.5rem;"><h3 style="font-size: 1.2rem; margin:0;"><i class="fas fa-video"></i> Video Editing</h3></div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" style="background: #0f0f1a;">
+    <section id="contact" class="section-padding">
         <div class="container">
             <h2 class="section-title">Contacts</h2>
             <div class="social-links">
-                <a href="https://wa.me/2348166652222" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://facebook.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="https://x.com/abusarake" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://linkedin.com/in/abubakar-ibrahim" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:abubakarjm9@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/share/18XKzgXtjY/" target="_blank" class="social-icon" aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/abubakar-ibrahim-20643913b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon" aria-label="LinkedIn Network"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/abusarke" target="_blank" class="social-icon" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/2348166652222" target="_blank" class="social-icon" aria-label="WhatsApp Link"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+2348166652222" class="social-icon" aria-label="Call Phone Number"><i class="fas fa-phone"></i></a>
+                <a href="mailto:abubakarjm9@gmail.com" class="social-icon" aria-label="Email Address"><i class="fas fa-envelope"></i></a>
+                <a href="https://x.com/abusarake" target="_blank" class="social-icon" aria-label="Twitter X Profile"><i class="fab fa-x-twitter"></i></a>
             </div>
         </div>
     </section>
 
-    <footer style="text-align:center; padding: 3rem; background:#050507; color:#777;">
+    <footer>
         <p><strong>Abubakar Ibrahim</strong> — Building the Future, One Line of Code at a Time</p>
-        <p>Ready for AHYEL Tech Fellowship 2026 • Made with passion in Nigeria © 2026</p>
+        <p>Ready for AHYEL Tech Fellowship 2026 • Made with passion in Nigeria &copy; 2026</p>
     </footer>
 
-    <!-- AI CHATBOT MODAL -->
-    <div class="modal" id="aiModal">
+    <div class="modal" id="aiModal" aria-hidden="true">
         <div class="modal-content">
             <div class="modal-header">
                 <h3><i class="fas fa-robot"></i> AI Community Assistant</h3>
-                <button onclick="closeAIChat()" style="background:none;border:none;color:white;font-size:1.8rem;cursor:pointer;">×</button>
+                <button onclick="closeAIChat()" style="background:none;border:none;color:white;font-size:2rem;cursor:pointer;line-height:1;">&times;</button>
             </div>
-            <div class="chat-body" id="chatBody">
-                <div class="message ai-msg">Hello! How can I help you today?</div>
-            </div>
+            <div class="chat-body" id="chatBody"></div>
             <div class="chat-input">
-                <input type="text" id="userInput" placeholder="Type your message..." style="flex:1; padding:14px 20px; border:none; border-radius:50px; background:#2a2a3a; color:white;">
-                <button onclick="sendMessage()" style="padding:14px 28px; background:var(--primary); color:white; border:none; border-radius:50px; font-weight:600;">Send</button>
+                <input type="text" id="userInput" placeholder="Ask me anything..." autocomplete="off">
+                <button onclick="sendMessage()">Send</button>
             </div>
         </div>
     </div>
+
 </body>
 </html>
